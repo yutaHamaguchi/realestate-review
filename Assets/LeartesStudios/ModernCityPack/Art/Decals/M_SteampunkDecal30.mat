@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6937021396723010610
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 639247ca83abc874e893eb93af2b5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 0
+--- !u!114 &-3277325555736519690
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 13
+  hdPluginSubTargetMaterialVersions:
+    m_Keys: []
+    m_Values: 
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_SteampunkDecal30
+  m_Shader: {fileID: -6465566751694194690, guid: 1284a4aaefbfe8546b4ea2db10c7fe44, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _MATERIAL_AFFECTS_MASKMAP
+  - _MATERIAL_AFFECTS_NORMAL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_0d3df139a000462baf17c5e14b8c4b4f:
+        m_Texture: {fileID: 2800000, guid: c00a51420c447b141bb1ee1e443c7c37, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_079cad78a3ba49698b135ab60d76bf16_Texture_1:
+        m_Texture: {fileID: 2800000, guid: bec06ef28ee5da8499b97a3b79075c89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_079cad78a3ba49698b135ab60d76bf16_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: bec06ef28ee5da8499b97a3b79075c89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_108140d2fc5f4a5eb332aeb5960e5da1_Texture_1:
+        m_Texture: {fileID: 2800000, guid: bec06ef28ee5da8499b97a3b79075c89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_108140d2fc5f4a5eb332aeb5960e5da1_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: bec06ef28ee5da8499b97a3b79075c89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_149e5f82071f4c2da81c78123eca6267_Texture_1:
+        m_Texture: {fileID: 2800000, guid: bec06ef28ee5da8499b97a3b79075c89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_149e5f82071f4c2da81c78123eca6267_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: bec06ef28ee5da8499b97a3b79075c89, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_3f6aa73e63f34136b22b23d1f2e67163_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 2190ab317bb961c47beccd7964d652bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_3f6aa73e63f34136b22b23d1f2e67163_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 2190ab317bb961c47beccd7964d652bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_519b0aded9a24db2a0b11e8be1e5c174_Texture_1:
+        m_Texture: {fileID: 2800000, guid: bf8ebe6cc464ca246ab81097e5ffbf95, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_519b0aded9a24db2a0b11e8be1e5c174_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: bf8ebe6cc464ca246ab81097e5ffbf95, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d2a919f7d3a6412eb8c8f858eb40a2b2_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 35c501c1c0b3e6e4391b71392538c484, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_d2a919f7d3a6412eb8c8f858eb40a2b2_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 35c501c1c0b3e6e4391b71392538c484, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Vector1_344241411f0a48bea01685480cdfa0b5: -0.01
+    - Vector1_4bc79505187d43ccad660d38162bc31c: 0.02
+    - Vector1_63727e2cdc34451fa32855df5e0791eb: 0.002
+    - Vector1_a40ea93360b04f808f7ef4f460d0abe2: -0.005
+    - _AffectAlbedo: 0
+    - _AffectMetal: 1
+    - _AffectNormal: 1
+    - _AffectSmoothness: 1
+    - _BUILTIN_AlphaClip: 0
+    - _BUILTIN_Blend: 0
+    - _BUILTIN_CullMode: 2
+    - _BUILTIN_DstBlend: 0
+    - _BUILTIN_QueueControl: -1
+    - _BUILTIN_QueueOffset: 0
+    - _BUILTIN_SrcBlend: 1
+    - _BUILTIN_Surface: 0
+    - _BUILTIN_ZTest: 4
+    - _BUILTIN_ZWrite: 1
+    - _BUILTIN_ZWriteControl: 0
+    - _DecalColorMask0: 0
+    - _DecalColorMask1: 15
+    - _DecalColorMask2: 11
+    - _DecalColorMask3: 8
+    - _DecalMeshBiasType: 0
+    - _DecalMeshDepthBias: 0
+    - _DecalMeshViewBias: 0
+    - _DecalStencilRef: 16
+    - _DecalStencilWriteMask: 16
+    - _DrawOrder: 0
+    m_Colors:
+    - Color_b5b251560fac47c0bc8c8e1797b1c188: {r: 0.12549016, g: 0.16078427, b: 0.20784315, a: 1}
+    - Vector3_acbc4d5c369e45dca905af4ae6c7b397: {r: -1, g: -1, b: 1, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &8419703520345308726
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7
