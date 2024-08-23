@@ -1927,9 +1927,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floors: 1
   floorPlansSprites: []
+  visitPoint: []
   floorViewImage: {fileID: 5290167995273600915}
   floorViewBtn: {fileID: 7626120376148223402}
   backBtn: {fileID: 7314204465703449717}
+  visit: {fileID: 5559945682486184954}
   cinemachineVirtualCamera: {fileID: 0}
   floorPlanPanel: {fileID: 3361955258271715731}
   floorPlanBtnPanel: {fileID: 4829400179240882110}

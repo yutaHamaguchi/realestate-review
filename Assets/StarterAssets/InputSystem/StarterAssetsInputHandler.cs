@@ -80,6 +80,15 @@ public partial class @StarterAssetsInputHandler: IInputActionCollection2, IDispo
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Settings"",
+                    ""type"": ""Button"",
+                    ""id"": ""8d86409a-cff8-46bb-85bf-b595bf98c4d9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -280,6 +289,17 @@ public partial class @StarterAssetsInputHandler: IInputActionCollection2, IDispo
                     ""action"": ""Action"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""878e37d7-4a12-4baa-bb9d-bd6e48bf4252"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Settings"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -342,6 +362,7 @@ public partial class @StarterAssetsInputHandler: IInputActionCollection2, IDispo
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_TP = m_Player.FindAction("TP", throwIfNotFound: true);
         m_Player_Action = m_Player.FindAction("Action", throwIfNotFound: true);
+        m_Player_Settings = m_Player.FindAction("Settings", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -409,6 +430,7 @@ public partial class @StarterAssetsInputHandler: IInputActionCollection2, IDispo
     private readonly InputAction m_Player_Sprint;
     private readonly InputAction m_Player_TP;
     private readonly InputAction m_Player_Action;
+    private readonly InputAction m_Player_Settings;
     public struct PlayerActions
     {
         private @StarterAssetsInputHandler m_Wrapper;
@@ -419,6 +441,7 @@ public partial class @StarterAssetsInputHandler: IInputActionCollection2, IDispo
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
         public InputAction @TP => m_Wrapper.m_Player_TP;
         public InputAction @Action => m_Wrapper.m_Player_Action;
+        public InputAction @Settings => m_Wrapper.m_Player_Settings;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -446,6 +469,9 @@ public partial class @StarterAssetsInputHandler: IInputActionCollection2, IDispo
             @Action.started += instance.OnAction;
             @Action.performed += instance.OnAction;
             @Action.canceled += instance.OnAction;
+            @Settings.started += instance.OnSettings;
+            @Settings.performed += instance.OnSettings;
+            @Settings.canceled += instance.OnSettings;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -468,6 +494,9 @@ public partial class @StarterAssetsInputHandler: IInputActionCollection2, IDispo
             @Action.started -= instance.OnAction;
             @Action.performed -= instance.OnAction;
             @Action.canceled -= instance.OnAction;
+            @Settings.started -= instance.OnSettings;
+            @Settings.performed -= instance.OnSettings;
+            @Settings.canceled -= instance.OnSettings;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -529,5 +558,6 @@ public partial class @StarterAssetsInputHandler: IInputActionCollection2, IDispo
         void OnSprint(InputAction.CallbackContext context);
         void OnTP(InputAction.CallbackContext context);
         void OnAction(InputAction.CallbackContext context);
+        void OnSettings(InputAction.CallbackContext context);
     }
 }
