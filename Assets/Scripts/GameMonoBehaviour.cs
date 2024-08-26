@@ -44,7 +44,7 @@ public class GameMonoBehaviour : MonoBehaviour
 
                 isShown = true;
                 panel.localScale = startAnimation;
-                panel.gameObject.SetActive(isShown);
+                gameObject.SetActive(isShown);
                 panel.DOScale(endAnimation, animationTime).OnComplete(() =>
                 {
                     OnAnimationShow.Invoke();
@@ -65,7 +65,7 @@ public class GameMonoBehaviour : MonoBehaviour
             case SlideOrScale.SLIDERIGHTTOLEFT:
                 isShown = true;
                 panel.anchoredPosition = startAnimation;
-                panel.gameObject.SetActive(isShown);
+                gameObject.SetActive(isShown);
                 panel.DOAnchorPos3D(endAnimation, animationTime).OnComplete(() =>
                 {
                     OnAnimationShow.Invoke();
@@ -112,7 +112,7 @@ public class GameMonoBehaviour : MonoBehaviour
                 panel.DOScale(startAnimation, animationTime).OnComplete(() =>
                 {
                     OnAnimationHide.Invoke();
-                    panel.gameObject.SetActive(false);
+                    gameObject.SetActive(false);
                 });
                 break;
 
@@ -132,7 +132,7 @@ public class GameMonoBehaviour : MonoBehaviour
                 panel.DOAnchorPos3D(startAnimation, animationTime).OnComplete(() =>
                 {
                     OnAnimationHide.Invoke();
-                    panel.gameObject.SetActive(false);
+                    gameObject.SetActive(false);
                 });
                 break;
 

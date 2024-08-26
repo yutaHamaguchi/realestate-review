@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         thirdPersonController.gameObject.SetActive(enable);
         if (enable)
         {
-            StartCoroutine(LockCursor());
+            //StartCoroutine(LockCursor());
             if (InputHandler.Instance.IsTeleporting)
             {
                 tps.gameObject.SetActive(enable);
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         {
             thirdPersonController.transform.position = spawnTransform.position;
             thirdPersonController.transform.eulerAngles = spawnTransform.eulerAngles;
-            StartCoroutine(LockCursor());
+            //StartCoroutine(LockCursor());
             if (InputHandler.Instance.IsTeleporting)
             {
                 tps.gameObject.SetActive(enable);
@@ -71,14 +71,14 @@ public class Player : MonoBehaviour
         }
     }
 
-    public IEnumerator LockCursor()
-    {
-        starterAssetsInputs.cursorLocked = false;
-        yield return new WaitForSeconds(0.5f);
-        starterAssetsInputs.cursorLocked = true;
-        starterAssetsInputs.cursorInputForLook = false;
-        yield return new WaitForSeconds(0.5f);
-        starterAssetsInputs.cursorInputForLook = true;
-    }
+    // public IEnumerator LockCursor()
+    // {
+    //     starterAssetsInputs.cursorLocked = false;
+    //     yield return new WaitForSeconds(0.5f);
+    //     starterAssetsInputs.cursorLocked = true;
+    //     starterAssetsInputs.cursorInputForLook = false;
+    //     yield return new WaitForSeconds(0.5f);
+    //     starterAssetsInputs.cursorInputForLook = true;
+    // }
 
 }

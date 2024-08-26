@@ -9,4 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ModernCityPack.unity
     guid: 9dd604655f57f674381502dc9a24f08f
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 137908c71d55c4746893dc231beb074d, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: e037215d2a36b4040bed9dd8154d2e1f, type: 2}
