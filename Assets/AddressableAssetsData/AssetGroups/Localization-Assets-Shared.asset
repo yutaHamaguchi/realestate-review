@@ -17,8 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: b475dbb2e7eee394dbc041531d57d0e6
   m_SerializeEntries:
-  - m_GUID: c206598416e32184db4ed4c0101cc3f2
-    m_Address: Assets/Localization/Table/GameLang Shared Data.asset
+  - m_GUID: e32661c4645a0ce4682a3280aa82a2cd
+    m_Address: Assets/Localization/Tables/GameLang Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 970981f013faa1c4f9e0a0658dc361f2
   m_currentHash:
     serializedVersion: 2
-    Hash: ef059826a684a91a1d307bb0abc4d8f1
+    Hash: 71b64d8e4ae92727503e4c64a883a8b5
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
     m_Id: 
   m_RemoteCatalogLoadPath:
     m_Id: 
-  m_ContentStateBuildPathProfileVariableName: 
+  m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
   m_BuildAddressablesWithPlayerBuild: 0
@@ -60,6 +60,20 @@ MonoBehaviour:
     - m_InheritedParent: 
       m_Id: 5b3c2219eb319a148b4c94477b6f6149
       m_ProfileName: Default
+      m_Values:
+      - m_Id: aba8360424ffd7d42a42f9c9bdbc2380
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: e63d95175edc7a84f96bf91a0330ca0f
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: e766fa09007aaa74587312248dce6756
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: cfcd7dc40b2a2f54da687e9f987df8e9
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: b285dc654d4e2084daf78b1ed14f1bde
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+    - m_InheritedParent: 
+      m_Id: 3b88db9b62dfbbb4983bf9ba3c1761c7
+      m_ProfileName: WebGL
       m_Values:
       - m_Id: aba8360424ffd7d42a42f9c9bdbc2380
         m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'

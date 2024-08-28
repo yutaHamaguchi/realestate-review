@@ -1,6 +1,8 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization.Settings;
+using UnityEngine.UI;
 
 public class CanvasController : MonoBehaviour
 {
@@ -10,7 +12,9 @@ public class CanvasController : MonoBehaviour
     public TextMeshProUGUI instructionsText;
     public MainPopup frontPanel;
     public InstructionPopup instructionPanel;
+    public Button langChange;
     public Player player;
+    public string gameLocale = "en";
     private void Awake()
     {
         if (Instance == null)
@@ -27,6 +31,32 @@ public class CanvasController : MonoBehaviour
     private void Start()
     {
         InputHandler.Instance.OnSettingsPerformed += OnPressSettings;
+        langChange.onClick.AddListener(ChangeLanguage);
+    }
+    void ChangeLanguage()
+    {
+        var locale = LocalizationSettings.AvailableLocales.GetLocale("ja-Jp");
+
+        if (gameLocale == "en")
+        {
+            locale = LocalizationSettings.AvailableLocales.GetLocale("ja-JP");
+            gameLocale = "ja";
+        }
+        else
+        {
+            locale = LocalizationSettings.AvailableLocales.GetLocale("en-US");
+            gameLocale = "en";
+        }
+
+        if (locale != null)
+        {
+            LocalizationSettings.SelectedLocale = locale;
+        }
+        else
+        {
+            Debug.Log("locale not found: " + locale);
+        }
+
     }
     public void EnableDoorText(bool check)
     {

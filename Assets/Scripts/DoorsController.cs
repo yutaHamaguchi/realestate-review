@@ -30,11 +30,17 @@ public class DoorsController : MonoBehaviour
     {
         if (isDoorOpen)
         {
-            CanvasController.Instance.SetDoorText("「Eキーを押してドアを閉める」");
+            if (CanvasController.Instance.gameLocale == "en")
+                CanvasController.Instance.SetDoorText("Press 'E' to Close The Door");
+            else
+                CanvasController.Instance.SetDoorText("「Eキーを押してドアを閉める」");
         }
         else
         {
-            CanvasController.Instance.SetDoorText("「Eキーを押してドアを開ける」");
+            if (CanvasController.Instance.gameLocale == "en")
+                CanvasController.Instance.SetDoorText("Press 'E' to Open The Door");
+            else
+                CanvasController.Instance.SetDoorText("「Eキーを押してドアを開ける」");
         }
     }
 
