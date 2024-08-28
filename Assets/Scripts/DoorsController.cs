@@ -30,11 +30,11 @@ public class DoorsController : MonoBehaviour
     {
         if (isDoorOpen)
         {
-            CanvasController.Instance.SetDoorText("Press 'E' to Close The Door");
+            CanvasController.Instance.SetDoorText("「Eキーを押してドアを閉める」");
         }
         else
         {
-            CanvasController.Instance.SetDoorText("Press 'E' to Open The Door");
+            CanvasController.Instance.SetDoorText("「Eキーを押してドアを開ける」");
         }
     }
 

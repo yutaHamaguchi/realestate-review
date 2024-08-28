@@ -42,6 +42,8 @@ public class BuildingPlanViewer : MonoBehaviour
         floorViewBtn.gameObject.SetActive(false);
         activeCam = cinemachineVirtualCamera;
         activeCam.gameObject.SetActive(true);
+        currentFloorId = 0;
+        SetFloorImage(currentFloorId);
     }
 
     void OnBackPress()
